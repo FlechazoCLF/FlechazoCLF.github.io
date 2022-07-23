@@ -177,69 +177,6 @@ hexo deploy&lt;/p&gt;
         <updated>2021-04-02T16:13:14.000Z</updated>
     </entry>
     <entry>
-        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/hexo/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8github+jsDelivr%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/</id>
-        <title>⛄教你如何使用github+jsDelivr搭建免费图床☃</title>
-        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/hexo/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8github+jsDelivr%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/"/>
-        <content type="html">&lt;p&gt;本文内容包括：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;创建一个 github 仓库&lt;/li&gt;
-&lt;li&gt;使用 jsDelivr 免费 CDN 加速图片访问速度&lt;/li&gt;
-&lt;li&gt;创建 Token&lt;/li&gt;
-&lt;li&gt;使用 PicGo 配置 github 图床&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;创建-github-仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建-github-仓库&#34;&gt;#&lt;/a&gt; 创建 github 仓库&lt;/h3&gt;
-&lt;p&gt;这里就跳过怎么注册 github 账号的步骤了，做技术的都晓得。&lt;/p&gt;
-&lt;p&gt;1、登录你的 github 账号，创建一个新的仓库。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic4.zhimg.com/80/v2-839216525a3a19d8f32124b09af20dcb_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;2、然后填写仓库的资料，主要是仓库名，其他一般默认。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-e98f55aec0c6e91bdfb5e4d507bb2bcc_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;3、点击 create repository 后，跳到这个页面，就说明创建成功了。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-c64560c83fda966c47f744bd6a8b148c_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;然后可以上传一张图片试一下。不过，有可能你会遇到在 github 上看到的图片是裂开的情况。&lt;/p&gt;
-&lt;p&gt;只需要在电脑的 hosts 文件中添加以下代码即可。 windows 下的 hosts 文件 目录在  &lt;code&gt;C:\Windows\System32\drivers\etc&lt;/code&gt;  。（注意要以管理员权限打开） mac 下为  &lt;code&gt;/etc/hosts&lt;/code&gt; 。&lt;/p&gt;
-&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# GitHub Start&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;52.74.223.119 github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;192.30.253.119 gist.github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;54.169.195.247 api.github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;185.199.111.153 assets-cdn.github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 raw.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.108.133 user-images.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 gist.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 cloud.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 camo.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars0.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars1.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars2.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars3.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars4.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars5.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars6.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars7.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars8.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后回到你的图片仓库，刷新一下页面即可正常显示图片。&lt;/p&gt;
-&lt;h3 id=&#34;使用-jsdelivr-免费加速&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用-jsdelivr-免费加速&#34;&gt;#&lt;/a&gt; 使用 jsDelivr 免费加速&lt;/h3&gt;
-&lt;p&gt;其实，此时已经可以正常访问你仓库中的图片了。我这里以我创建好的仓库 myImages 为例。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/80/v2-c569ffab1517d19512de4cff771592c5_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;要想访问仓库中的这个 test.png 图片，需要把链接地址中的 blob 改为 raw。即  &lt;code&gt;https://github.com/starry-skys/myImages/raw/main/test.png&lt;/code&gt;  。或者在地址后拼接一段  &lt;code&gt;?raw=true&lt;/code&gt; ，即  &lt;code&gt;https://github.com/starry-skys/myImages/blob/main/test.png?raw=true&lt;/code&gt;  。&lt;/p&gt;
-&lt;p&gt;但是，我们发现，通过 github 直接访问图片，速度不是特别理想，毕竟服务器在国外。&lt;/p&gt;
-&lt;p&gt;因此，我们可以使用 jsDelivr 进行 CDN 加速。这是完全开源免费的。&lt;/p&gt;
-&lt;p&gt;使用方法，非常简单，即把图片地址链接域名改为 CDN 的域名。格式如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/&amp;lt;你的github用户名&amp;gt;/&amp;lt;你的图床仓库名&amp;gt;@&amp;lt;仓库版本号&amp;gt;/图片的路径
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;还是以上边的 test.png 图片为例，仓库版本号直接用分支名，由于现在 github 主分支名字都叫 main 了，因此版本号写 main 。图片路径，是在仓库中的相对路径，因为我这里就在根目录，因此就是 test.png 。&lt;/p&gt;
-&lt;p&gt;最终地址为  &lt;code&gt;https://cdn.jsdelivr.net/gh/starry-skys/myImages@main/test.png&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;其他说明，可参考 jsDelivr 官网介绍，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuanNkZWxpdnIuY29tLz9kb2NzPWdo&#34;&gt;jsDelivr 官网&lt;/span&gt;&lt;/p&gt;
-&lt;h3 id=&#34;配置-typora-自动上传到-github-图床&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置-typora-自动上传到-github-图床&#34;&gt;#&lt;/a&gt; 配置 typora 自动上传到 github 图床&lt;/h3&gt;
-&lt;p&gt;接下来，如果需要在 typora 中设置自动上传到 gtihub 图床，还需要做一些配置。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一、首先，在 github 上创建一个 token。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1、点击右上角账号上的 settings&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-4ec3ac659a65df75b2a665c532cf531c_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;2、然后左侧点击 developer settings ，再点击 personal access tokens ，然后点击 generate new token。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/80/v2-5ee4efbb3a3752a13328bd37f5bd7e35_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;3、Note 用来说明你创建 token 的用途，然后 scopes 只需要选 repo 的所有选项即可。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-a1a970472324b95627faea97bde93ec8_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;4、最后拉到底部，点击 generate token ，即可成功。&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-202c41c7c0aa333fc55eae3ab82a0c78_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;5、找个地方记下这一串 token，等会需要用到。（如果没有记住，等再查看时就只能重新生成了）&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/80/v2-97fdf7ae716a3da3b936d162f13ecbed_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;二、打开 PicGo 配置 github 图床&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在 PicGo 中，找到图床设置 -&amp;gt; GitHub 图床。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;仓库名即为你的 github 账号 / 图片仓库名&lt;/li&gt;
-&lt;li&gt;分支名就用默认的 main&lt;/li&gt;
-&lt;li&gt;Token 就填写刚才我们生成的 Token&lt;/li&gt;
-&lt;li&gt;存储路径如果需要指定子目录可以填写例如 img/ 。我这里没有填，就会上传到我图片仓库的根目录。&lt;/li&gt;
-&lt;li&gt;自定义域名就填写 jsDelivr 的域名，即图片访问地址，不包括图片路径的前半部分，我这里就是  &lt;code&gt;https://cdn.jsdelivr.net/gh/starry-skys/myImages@main&lt;/code&gt; 。&lt;/li&gt;
-&lt;li&gt;最后设为默认图床，下次在 typora 上传图片就会自动上传到 github 图床了。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://pic3.zhimg.com/80/v2-fec7d8c107aa37b6c42d2f88c8a14dc6_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;至此，所有步骤就已经完成了，赶紧去尝试一下吧。&lt;/p&gt;
-</content>
-        <category term="hexo" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/hexo/" />
-        <updated>2021-04-02T16:13:14.000Z</updated>
-    </entry>
-    <entry>
         <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/hexo/%E6%9C%AC%E5%9C%B0git%E4%B8%8Egithub%E7%BB%91%E5%AE%9A%E5%B9%B6%E5%90%91GitHub%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/</id>
         <title>⛄本地git与github绑定并向GitHub上传本地仓库☃</title>
         <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/hexo/%E6%9C%AC%E5%9C%B0git%E4%B8%8Egithub%E7%BB%91%E5%AE%9A%E5%B9%B6%E5%90%91GitHub%E4%B8%8A%E4%BC%A0%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93/"/>
@@ -338,14 +275,66 @@ git config --global user.email &#39; 登录邮箱&#39;&lt;br /&gt;
         <updated>2021-04-02T16:13:14.000Z</updated>
     </entry>
     <entry>
-        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/stock/%E7%82%92%E8%82%A1%E5%BF%83%E5%BE%97/</id>
-        <title>⛄被股市暴打的这些年☃</title>
-        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/stock/%E7%82%92%E8%82%A1%E5%BF%83%E5%BE%97/"/>
-        <content type="html">&lt;p&gt;今天是 2022 年 7 月 21 日，我打算开始记录自己的受挫经历，望今后慎重，且行且珍惜！&lt;/p&gt;
-&lt;p&gt;2022-7-22&lt;/p&gt;
-&lt;p&gt;发现最近一段时间的票都是前一天中午拉升回落，并且在日线买点上的，隔天都有较好的涨幅。我也不知道这是为啥，记录一下吧，以后弄明白了回来看看。&lt;/p&gt;
+        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/hexo/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8github+jsDelivr%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/</id>
+        <title>⛄教你如何使用github+jsDelivr搭建免费图床☃</title>
+        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/hexo/%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8github+jsDelivr%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A/"/>
+        <content type="html">&lt;p&gt;本文内容包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建一个 github 仓库&lt;/li&gt;
+&lt;li&gt;使用 jsDelivr 免费 CDN 加速图片访问速度&lt;/li&gt;
+&lt;li&gt;创建 Token&lt;/li&gt;
+&lt;li&gt;使用 PicGo 配置 github 图床&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;创建-github-仓库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#创建-github-仓库&#34;&gt;#&lt;/a&gt; 创建 github 仓库&lt;/h3&gt;
+&lt;p&gt;这里就跳过怎么注册 github 账号的步骤了，做技术的都晓得。&lt;/p&gt;
+&lt;p&gt;1、登录你的 github 账号，创建一个新的仓库。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic4.zhimg.com/80/v2-839216525a3a19d8f32124b09af20dcb_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;2、然后填写仓库的资料，主要是仓库名，其他一般默认。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-e98f55aec0c6e91bdfb5e4d507bb2bcc_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;3、点击 create repository 后，跳到这个页面，就说明创建成功了。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-c64560c83fda966c47f744bd6a8b148c_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后可以上传一张图片试一下。不过，有可能你会遇到在 github 上看到的图片是裂开的情况。&lt;/p&gt;
+&lt;p&gt;只需要在电脑的 hosts 文件中添加以下代码即可。 windows 下的 hosts 文件 目录在  &lt;code&gt;C:\Windows\System32\drivers\etc&lt;/code&gt;  。（注意要以管理员权限打开） mac 下为  &lt;code&gt;/etc/hosts&lt;/code&gt; 。&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;figcaption data-lang=&#34;text&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# GitHub Start&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;52.74.223.119 github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;192.30.253.119 gist.github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;54.169.195.247 api.github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;185.199.111.153 assets-cdn.github.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 raw.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.108.133 user-images.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 gist.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 cloud.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 camo.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars0.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars1.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars2.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars3.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars4.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars5.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars6.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars7.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;151.101.76.133 avatars8.githubusercontent.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后回到你的图片仓库，刷新一下页面即可正常显示图片。&lt;/p&gt;
+&lt;h3 id=&#34;使用-jsdelivr-免费加速&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#使用-jsdelivr-免费加速&#34;&gt;#&lt;/a&gt; 使用 jsDelivr 免费加速&lt;/h3&gt;
+&lt;p&gt;其实，此时已经可以正常访问你仓库中的图片了。我这里以我创建好的仓库 myImages 为例。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/80/v2-c569ffab1517d19512de4cff771592c5_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;要想访问仓库中的这个 test.png 图片，需要把链接地址中的 blob 改为 raw。即  &lt;code&gt;https://github.com/starry-skys/myImages/raw/main/test.png&lt;/code&gt;  。或者在地址后拼接一段  &lt;code&gt;?raw=true&lt;/code&gt; ，即  &lt;code&gt;https://github.com/starry-skys/myImages/blob/main/test.png?raw=true&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;但是，我们发现，通过 github 直接访问图片，速度不是特别理想，毕竟服务器在国外。&lt;/p&gt;
+&lt;p&gt;因此，我们可以使用 jsDelivr 进行 CDN 加速。这是完全开源免费的。&lt;/p&gt;
+&lt;p&gt;使用方法，非常简单，即把图片地址链接域名改为 CDN 的域名。格式如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/&amp;lt;你的github用户名&amp;gt;/&amp;lt;你的图床仓库名&amp;gt;@&amp;lt;仓库版本号&amp;gt;/图片的路径
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;还是以上边的 test.png 图片为例，仓库版本号直接用分支名，由于现在 github 主分支名字都叫 main 了，因此版本号写 main 。图片路径，是在仓库中的相对路径，因为我这里就在根目录，因此就是 test.png 。&lt;/p&gt;
+&lt;p&gt;最终地址为  &lt;code&gt;https://cdn.jsdelivr.net/gh/starry-skys/myImages@main/test.png&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;其他说明，可参考 jsDelivr 官网介绍，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuanNkZWxpdnIuY29tLz9kb2NzPWdo&#34;&gt;jsDelivr 官网&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;配置-typora-自动上传到-github-图床&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#配置-typora-自动上传到-github-图床&#34;&gt;#&lt;/a&gt; 配置 typora 自动上传到 github 图床&lt;/h3&gt;
+&lt;p&gt;接下来，如果需要在 typora 中设置自动上传到 gtihub 图床，还需要做一些配置。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一、首先，在 github 上创建一个 token。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、点击右上角账号上的 settings&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-4ec3ac659a65df75b2a665c532cf531c_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;2、然后左侧点击 developer settings ，再点击 personal access tokens ，然后点击 generate new token。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/80/v2-5ee4efbb3a3752a13328bd37f5bd7e35_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;3、Note 用来说明你创建 token 的用途，然后 scopes 只需要选 repo 的所有选项即可。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-a1a970472324b95627faea97bde93ec8_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;4、最后拉到底部，点击 generate token ，即可成功。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic1.zhimg.com/80/v2-202c41c7c0aa333fc55eae3ab82a0c78_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;5、找个地方记下这一串 token，等会需要用到。（如果没有记住，等再查看时就只能重新生成了）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic2.zhimg.com/80/v2-97fdf7ae716a3da3b936d162f13ecbed_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;二、打开 PicGo 配置 github 图床&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 PicGo 中，找到图床设置 -&amp;gt; GitHub 图床。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;仓库名即为你的 github 账号 / 图片仓库名&lt;/li&gt;
+&lt;li&gt;分支名就用默认的 main&lt;/li&gt;
+&lt;li&gt;Token 就填写刚才我们生成的 Token&lt;/li&gt;
+&lt;li&gt;存储路径如果需要指定子目录可以填写例如 img/ 。我这里没有填，就会上传到我图片仓库的根目录。&lt;/li&gt;
+&lt;li&gt;自定义域名就填写 jsDelivr 的域名，即图片访问地址，不包括图片路径的前半部分，我这里就是  &lt;code&gt;https://cdn.jsdelivr.net/gh/starry-skys/myImages@main&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;最后设为默认图床，下次在 typora 上传图片就会自动上传到 github 图床了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://pic3.zhimg.com/80/v2-fec7d8c107aa37b6c42d2f88c8a14dc6_720w.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;至此，所有步骤就已经完成了，赶紧去尝试一下吧。&lt;/p&gt;
 </content>
-        <category term="炒股心得" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/stock/" />
+        <category term="hexo" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/hexo/" />
         <updated>2021-04-02T16:13:14.000Z</updated>
     </entry>
     <entry>
@@ -443,6 +432,17 @@ git clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka
 🔧 一些显示问题&lt;/p&gt;
 </content>
         <category term="shoka" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/shoka/" />
+        <updated>2021-04-02T16:13:14.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/stock/%E7%82%92%E8%82%A1%E5%BF%83%E5%BE%97/</id>
+        <title>⛄被股市暴打的这些年☃</title>
+        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/stock/%E7%82%92%E8%82%A1%E5%BF%83%E5%BE%97/"/>
+        <content type="html">&lt;p&gt;今天是 2022 年 7 月 21 日，我打算开始记录自己的受挫经历，望今后慎重，且行且珍惜！&lt;/p&gt;
+&lt;p&gt;2022-7-22&lt;/p&gt;
+&lt;p&gt;发现最近一段时间的票都是前一天中午拉升回落，并且在日线买点上的，隔天都有较好的涨幅。我也不知道这是为啥，记录一下吧，以后弄明白了回来看看。&lt;/p&gt;
+</content>
+        <category term="炒股心得" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/stock/" />
         <updated>2021-04-02T16:13:14.000Z</updated>
     </entry>
     <entry>
@@ -642,6 +642,203 @@ feed:
         template: &amp;quot;themes/shoka/layout/_alternate/json.ejs&amp;quot;
         output: &amp;quot;feed.json&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
+</content>
+        <category term="shoka" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/shoka/" />
+        <updated>2021-04-02T16:13:14.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/shoka/Step.3%20%E7%95%8C%E9%9D%A2%E6%98%BE%E7%A4%BA/</id>
+        <title>⛄Step.3 界面显示☃</title>
+        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/shoka/Step.3%20%E7%95%8C%E9%9D%A2%E6%98%BE%E7%A4%BA/"/>
+        <content type="html">&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;🚀快速开始&lt;/span&gt; - &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kZXBlbmRlbnRzLw==&#34;&gt;💌依赖插件&lt;/span&gt; - &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;📌基本配置&lt;/span&gt; - &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/&#34;&gt;&lt;strong&gt;🌈界面显示&lt;/strong&gt;&lt;/a&gt; - &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==&#34;&gt;🦄特殊功能&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTklQTYlOTYlRTklQTElQjUlRTclQkQlQUUlRTklQTElQjYlRTYlOTYlODclRTclQUIlQTA=&#34;&gt;#&lt;/span&gt;首页置顶文章&lt;/h1&gt;
+&lt;p&gt;在文章的 Front Matter 设置  &lt;code&gt;sticky: true&lt;/code&gt;  ，则该文章将显示在首页最上方的  &lt;code&gt;置顶文章&lt;/code&gt;  列。&lt;br /&gt;
+多篇文章按照发布时间倒序排列，不分页。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: 置顶文章
+sticky: true
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTklQTYlOTYlRTklQTElQjUlRTclQjIlQkUlRTklODAlODklRTUlODglODYlRTclQjElQkI=&#34;&gt;#&lt;/span&gt;首页精选分类&lt;/h1&gt;
+&lt;p&gt;想要在首页显示分类翻转块，需要按照以下示例的方式，给需要显示的分类加上封面图。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先，修改站点配置：&lt;br /&gt;
+找到  &lt;code&gt;category_map:&lt;/code&gt;  ，配置每个分类对应的英文映射，比如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;category_map:
+  计算机科学: computer-science
+  Java: java
+  C++: cpp
+  二进制杂谈: note
+  计算机程序设计（C++）-西安交通大学: course-1
+  零基础学Java语言-浙江大学-翁恺: course-1
+  面向对象程序设计-Java语言-浙江大学-翁恺: course-2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意：hexo 会自动处理路径中的特殊字符，~ &lt;code&gt;!@#$%^&amp;amp;*()-_+=&amp;#123;&amp;#125;|\;:&amp;quot;&#39;&amp;lt;&amp;gt;,.? 以及空格，这些全部会被替换成 &lt;/code&gt; - &lt;code&gt;所以避免在设置中使用上述字符，否则可导致无法抓取到目录下的&lt;/code&gt;  cover.jpg`&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts&lt;/code&gt;  文件夹相应的目录里，存放封面图&lt;br /&gt;
+例子：如 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9qYXZhL2NvdXJzZS0xL3dlZWstMS8=&#34;&gt;第 1 周 计算&lt;/span&gt; 这篇文章。&lt;br /&gt;
+所处的分类是&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;categories:
+- [计算机科学, Java, 零基础学Java语言-浙江大学-翁恺]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;现在需要在首页显示  &lt;code&gt;零基础学Java语言-浙江大学-翁恺&lt;/code&gt;  这个分类，翻转卡片后，显示这个分类下的文章们。&lt;br /&gt;
+而该分类经过英文映射，它的路径将是  &lt;code&gt;/computer-science/java/course-1/&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;那么，请在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts/computer-science/java/course-1/&lt;/code&gt;  的目录下放置  &lt;code&gt;cover.jpg&lt;/code&gt;  文件。&lt;br /&gt;
+只要  &lt;code&gt;分类路径&lt;/code&gt;  对应的目录下&lt;strong&gt;存在&lt;/strong&gt;  &lt;code&gt;cover.jpg&lt;/code&gt;  文件，这个分类就会在首页显示。&lt;br /&gt;
+在进行  &lt;code&gt;hexo g&lt;/code&gt;  时，本分类的封面图会自动被复制到 public 目录里相应的位置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;事实上，为了方便文章管理，这个分类下所有文章的 md 文件，我都会放在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts/computer-science/java/course-1/&lt;/code&gt;  这个目录下。&lt;/p&gt;
+&lt;p&gt;且站点配置文件里，永久链接设置如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;permalink: :title/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;hexo g&lt;/code&gt;  后，文章的 html 文件们将全部生成到  &lt;code&gt;&amp;lt;root&amp;gt;/public/computer-science/java/course-1/&lt;/code&gt;  目录。&lt;br /&gt;
+具体可以查看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvc2hva2E=&#34;&gt;本博客的 github 仓库&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;文章详情界面中的  &lt;code&gt;系列文章&lt;/code&gt;  ，显示的是与当前文章同一分类的其他文章，并按照文章名正序排序。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;o (&lt;em&gt;￣▽￣&lt;/em&gt;) ゞ&lt;br /&gt;
+其实，不设置  &lt;code&gt;category_map&lt;/code&gt;  也可以，只要在分类路径对应的文件夹下存在  &lt;code&gt;cover.jpg&lt;/code&gt;  文件就行。&lt;br /&gt;
+现在，这项功能与  &lt;code&gt;category_dir&lt;/code&gt;  的配置也无关，  &lt;code&gt;hexo g&lt;/code&gt;  生成后，图片会自动被转移到  &lt;code&gt;category_dir&lt;/code&gt;  的相关子目录下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-3&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTYlOTYlODclRTclQUIlQTAlRTUlQjAlODElRTklOUQlQTIlRTUlOUIlQkU=&#34;&gt;#&lt;/span&gt;文章封面图&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果文章的 Front Matter 设置了  &lt;code&gt;cover: image path&lt;/code&gt;  ，则封面会显示这张图片。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title: Images
+cover: assets/wallpaper-2572384.jpg
+# 或者写成
+cover: http://placehold.it/350x150.jpg
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这里  &lt;code&gt;cover&lt;/code&gt;  的值可以是位于  &lt;code&gt;source&lt;/code&gt;  目录里的图片文件，此处是  &lt;code&gt;&amp;lt;root&amp;gt;/source/assets/wallpaper-2572384.jpg&lt;/code&gt;  文件，也可以是一个某网址。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果文章是一个  &lt;code&gt;gallery post&lt;/code&gt;  ，即 Front Matter 设置了  &lt;code&gt;photos&lt;/code&gt;  ，则会封面会显示设置的第一张图片。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title: Gallery Post
+photos:
+- assets/wallpaper-2572384.jpg
+- assets/wallpaper-2311325.jpg
+- assets/wallpaper-878514.jpg
+- http://placehold.it/350x150.jpg
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时默认会显示第一个图片，即位于  &lt;code&gt;&amp;lt;root&amp;gt;/source/assets/&lt;/code&gt;  目录里的  &lt;code&gt;wallpaper-2572384.jpg&lt;/code&gt;  。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果站点配置中设置了  &lt;code&gt;post_asset_folder: true&lt;/code&gt;  ，那么上述本地图片路径应为  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts/文章同名的文件夹/assets/wallpaper-2572384.jpg&lt;/code&gt;  ，当然此时  &lt;code&gt;assets&lt;/code&gt;  目录可以省掉。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果以上设置均不存在，将显示一张随机图片，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcvIyVFOSU5QSU4RiVFNiU5QyVCQSVFNSU5QiVCRSVFNSVCQSU5Mw==&#34;&gt;随机图库配置戳此&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-4&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTUlOUIlQkUlRTclODklODclRTUlQjElOTUlRTclQTQlQkElRTQlQjglOEUlRTclOUIlQjglRTUlODYlOEM=&#34;&gt;#&lt;/span&gt;图片展示与相册&lt;/h1&gt;
+&lt;p&gt;在文章的 Front Matter 设置  &lt;code&gt;fancybox: false&lt;/code&gt;  ，可以关闭文章页的图片展示功能。&lt;br /&gt;
+使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21pcm9tYW5uaW5vLmdpdGh1Yi5pby9KdXN0aWZpZWQtR2FsbGVyeS8=&#34;&gt; Justified-Gallery&lt;/span&gt; 对 Gallery Post 内图案进行排列。&lt;/p&gt;
+&lt;p&gt;下面介绍一些小技巧：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;让图案下方显示  &lt;code&gt;title&lt;/code&gt;  的 markdown 代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;![这里是 alt](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;这里是 title&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;这里是alt&#34; /&gt; 这里是 title&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;设置图片的大小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;![](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;定义图片大小 - 固定宽度和高度&amp;quot;)&amp;#123;height=&amp;quot;100px&amp;quot; width=&amp;quot;400px&amp;quot;&amp;#125;
+
+![](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;定义图片大小 - 固定宽度&amp;quot;)&amp;#123;width=&amp;quot;400px&amp;quot;&amp;#125;
+
+![](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;定义图片大小 - 固定高度&amp;quot;)&amp;#123;height=&amp;quot;100px&amp;quot;&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;定义图片大小-固定宽度和高度&#34; /&gt;定义图片大小 - 固定宽度和高度&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;定义图片大小-固定宽度&#34; /&gt;定义图片大小 - 固定宽度&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;定义图片大小-固定高度&#34; /&gt;定义图片大小 - 固定高度&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;除了在 Front Matter 里配置  &lt;code&gt;photos&lt;/code&gt;  可以显示相册图案列表外，还可以这样写&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;## 图案列表 No.1
+![](https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg &amp;quot;这里是 title&amp;quot;)
+![](https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg)
+![](https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg)
+![](https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg)
+&amp;#123;.gallery&amp;#125;
+
+## 图案列表 No.2
+![](https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg)
+![](https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg)
+![](https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg)
+![](https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg)
+&amp;#123;.gallery data-height=&amp;quot;120&amp;quot;&amp;#125;
+data-height` 用来设置每行的高度，默认为 `220
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;-5&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-5&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTUlOUIlQkUlRTYlQTElODglRTUlODglOTclRTglQTElQThubzE=&#34;&gt;#&lt;/span&gt;图案列表 No.1&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg&#34; alt=&#34;这里是title&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-6&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-6&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTUlOUIlQkUlRTYlQTElODglRTUlODglOTclRTglQTElQThubzI=&#34;&gt;#&lt;/span&gt;图案列表 No.2&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;-7&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-7&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTglODclQUElRTUlQUUlOUElRTQlQjklODklRTklQTElQjUlRTklOUQlQTIlRTklODUlOEQlRTglODklQjI=&#34;&gt;#&lt;/span&gt;自定义页面配色&lt;/h1&gt;
+&lt;p&gt;主题配色全部在  &lt;code&gt;&amp;lt;root&amp;gt;/themes/shoka/source/css/_colors.styl&lt;/code&gt;  文件中，可以自行查看。&lt;/p&gt;
+&lt;p&gt;在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录新建文件  &lt;code&gt;colors.styl&lt;/code&gt;  ，在此文件中添改样式。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;自定义  &lt;code&gt;colors.styl&lt;/code&gt;  文件将覆盖主题默认样式，为了避免出错，请保证原有样式名均存在，在原有样式基础上进行增删改。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;主题支持在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录建立三个自定义  &lt;code&gt;styl&lt;/code&gt;  文件：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;自定义文件名&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;对应默认样式文件&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;样式功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;colors.styl&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;_colors.styl&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;页面配色&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;iconfont.styl&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;_iconfont.styl&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcvI2ljb25mb250JUU1JTlCJUJFJUU2JUEwJTg3&#34;&gt;图标样式&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;custom.styl&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;任意自定义样式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;-8&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-8&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTglODclQUElRTUlQUUlOUElRTQlQjklODklRTQlQjglQkIlRTklQTIlOTglRTUlOUIlQkUlRTclODklODc=&#34;&gt;#&lt;/span&gt;自定义主题图片&lt;/h1&gt;
+&lt;p&gt;如果想要修改主题的  &lt;code&gt;&amp;lt;root&amp;gt;/themes/shoka/source/images/&lt;/code&gt;  目录内的某张图片，请在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录新建目录  &lt;code&gt;images&lt;/code&gt;  ，并在这个文件夹中添加同名文件，部署时将自动覆盖主题内的默认图片。&lt;/p&gt;
+&lt;p&gt;可以用此方法自定义头像、打赏二维码等图片，并且避免覆盖更新主题时遗失自定义文件。&lt;/p&gt;
+&lt;h1 id=&#34;-9&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-9&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTglODclQUElRTUlQUUlOUElRTQlQjklODklRTglQUYlQUQlRTglQTglODAlRTUlOEMlODU=&#34;&gt;#&lt;/span&gt;自定义语言包&lt;/h1&gt;
+&lt;p&gt;本功能参考 NexT，主要可以用来定义菜单等处显示的文字，且可以方便主题无脑覆盖升级。&lt;/p&gt;
+&lt;p&gt;在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录新建文件  &lt;code&gt;languages.yml&lt;/code&gt;  。&lt;/p&gt;
+&lt;p&gt;按照以下格式添加配置项：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# language
+zh-CN:
+  # items
+  post:
+    copyright:
+      # the translation you perfer
+      author: 本文博主
+en:
+  menu:
+    travellings: Travellings
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以参考主题目录下的  &lt;code&gt;example/source/_data&lt;/code&gt;  文件夹。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;站点配置及文件的 Front Matter 中，  &lt;code&gt;language&lt;/code&gt;  项只支持  &lt;code&gt;zh-CN&lt;/code&gt;  、  &lt;code&gt;zh-HK&lt;/code&gt;  、  &lt;code&gt;zh-TW&lt;/code&gt;  、  &lt;code&gt;ja&lt;/code&gt;  、  &lt;code&gt;en&lt;/code&gt;  。&lt;br /&gt;
+类似写成  &lt;code&gt;zh_CN&lt;/code&gt;  这样是不可以的。&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
         <category term="shoka" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/shoka/" />
         <updated>2021-04-02T16:13:14.000Z</updated>
@@ -1031,203 +1228,6 @@ image_server: &amp;quot;https://acg.xydwz.cn/api/api.php&amp;quot;
 如果不明白啥意思，则不要轻易修改。&lt;/p&gt;
 &lt;p&gt;主题版本升级的时候，可能会修改这里。&lt;br /&gt;
 如果修改过主题默认  &lt;code&gt;_config.yml&lt;/code&gt;  ，记得更新主题时，末尾的  &lt;code&gt;vendors&lt;/code&gt;  也要及时修改。&lt;/p&gt;
-</content>
-        <category term="shoka" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/shoka/" />
-        <updated>2021-04-02T16:13:14.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/shoka/Step.3%20%E7%95%8C%E9%9D%A2%E6%98%BE%E7%A4%BA/</id>
-        <title>⛄Step.3 界面显示☃</title>
-        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/shoka/Step.3%20%E7%95%8C%E9%9D%A2%E6%98%BE%E7%A4%BA/"/>
-        <content type="html">&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy8=&#34;&gt;🚀快速开始&lt;/span&gt; - &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kZXBlbmRlbnRzLw==&#34;&gt;💌依赖插件&lt;/span&gt; - &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcv&#34;&gt;📌基本配置&lt;/span&gt; - &lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/display/&#34;&gt;&lt;strong&gt;🌈界面显示&lt;/strong&gt;&lt;/a&gt; - &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==&#34;&gt;🦄特殊功能&lt;/span&gt;&lt;/p&gt;
-&lt;h1 id=&#34;&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTklQTYlOTYlRTklQTElQjUlRTclQkQlQUUlRTklQTElQjYlRTYlOTYlODclRTclQUIlQTA=&#34;&gt;#&lt;/span&gt;首页置顶文章&lt;/h1&gt;
-&lt;p&gt;在文章的 Front Matter 设置  &lt;code&gt;sticky: true&lt;/code&gt;  ，则该文章将显示在首页最上方的  &lt;code&gt;置顶文章&lt;/code&gt;  列。&lt;br /&gt;
-多篇文章按照发布时间倒序排列，不分页。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: 置顶文章
-sticky: true
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;-2&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-2&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTklQTYlOTYlRTklQTElQjUlRTclQjIlQkUlRTklODAlODklRTUlODglODYlRTclQjElQkI=&#34;&gt;#&lt;/span&gt;首页精选分类&lt;/h1&gt;
-&lt;p&gt;想要在首页显示分类翻转块，需要按照以下示例的方式，给需要显示的分类加上封面图。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;首先，修改站点配置：&lt;br /&gt;
-找到  &lt;code&gt;category_map:&lt;/code&gt;  ，配置每个分类对应的英文映射，比如：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;category_map:
-  计算机科学: computer-science
-  Java: java
-  C++: cpp
-  二进制杂谈: note
-  计算机程序设计（C++）-西安交通大学: course-1
-  零基础学Java语言-浙江大学-翁恺: course-1
-  面向对象程序设计-Java语言-浙江大学-翁恺: course-2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;blockquote&gt;
-&lt;p&gt;注意：hexo 会自动处理路径中的特殊字符，~ &lt;code&gt;!@#$%^&amp;amp;*()-_+=&amp;#123;&amp;#125;|\;:&amp;quot;&#39;&amp;lt;&amp;gt;,.? 以及空格，这些全部会被替换成 &lt;/code&gt; - &lt;code&gt;所以避免在设置中使用上述字符，否则可导致无法抓取到目录下的&lt;/code&gt;  cover.jpg`&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts&lt;/code&gt;  文件夹相应的目录里，存放封面图&lt;br /&gt;
-例子：如 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9qYXZhL2NvdXJzZS0xL3dlZWstMS8=&#34;&gt;第 1 周 计算&lt;/span&gt; 这篇文章。&lt;br /&gt;
-所处的分类是&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;categories:
-- [计算机科学, Java, 零基础学Java语言-浙江大学-翁恺]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;现在需要在首页显示  &lt;code&gt;零基础学Java语言-浙江大学-翁恺&lt;/code&gt;  这个分类，翻转卡片后，显示这个分类下的文章们。&lt;br /&gt;
-而该分类经过英文映射，它的路径将是  &lt;code&gt;/computer-science/java/course-1/&lt;/code&gt;  。&lt;/p&gt;
-&lt;p&gt;那么，请在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts/computer-science/java/course-1/&lt;/code&gt;  的目录下放置  &lt;code&gt;cover.jpg&lt;/code&gt;  文件。&lt;br /&gt;
-只要  &lt;code&gt;分类路径&lt;/code&gt;  对应的目录下&lt;strong&gt;存在&lt;/strong&gt;  &lt;code&gt;cover.jpg&lt;/code&gt;  文件，这个分类就会在首页显示。&lt;br /&gt;
-在进行  &lt;code&gt;hexo g&lt;/code&gt;  时，本分类的封面图会自动被复制到 public 目录里相应的位置。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;事实上，为了方便文章管理，这个分类下所有文章的 md 文件，我都会放在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts/computer-science/java/course-1/&lt;/code&gt;  这个目录下。&lt;/p&gt;
-&lt;p&gt;且站点配置文件里，永久链接设置如下&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;permalink: :title/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;hexo g&lt;/code&gt;  后，文章的 html 文件们将全部生成到  &lt;code&gt;&amp;lt;root&amp;gt;/public/computer-science/java/course-1/&lt;/code&gt;  目录。&lt;br /&gt;
-具体可以查看&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvc2hva2E=&#34;&gt;本博客的 github 仓库&lt;/span&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;文章详情界面中的  &lt;code&gt;系列文章&lt;/code&gt;  ，显示的是与当前文章同一分类的其他文章，并按照文章名正序排序。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;o (&lt;em&gt;￣▽￣&lt;/em&gt;) ゞ&lt;br /&gt;
-其实，不设置  &lt;code&gt;category_map&lt;/code&gt;  也可以，只要在分类路径对应的文件夹下存在  &lt;code&gt;cover.jpg&lt;/code&gt;  文件就行。&lt;br /&gt;
-现在，这项功能与  &lt;code&gt;category_dir&lt;/code&gt;  的配置也无关，  &lt;code&gt;hexo g&lt;/code&gt;  生成后，图片会自动被转移到  &lt;code&gt;category_dir&lt;/code&gt;  的相关子目录下。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&#34;-3&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-3&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTYlOTYlODclRTclQUIlQTAlRTUlQjAlODElRTklOUQlQTIlRTUlOUIlQkU=&#34;&gt;#&lt;/span&gt;文章封面图&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;如果文章的 Front Matter 设置了  &lt;code&gt;cover: image path&lt;/code&gt;  ，则封面会显示这张图片。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;title: Images
-cover: assets/wallpaper-2572384.jpg
-# 或者写成
-cover: http://placehold.it/350x150.jpg
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这里  &lt;code&gt;cover&lt;/code&gt;  的值可以是位于  &lt;code&gt;source&lt;/code&gt;  目录里的图片文件，此处是  &lt;code&gt;&amp;lt;root&amp;gt;/source/assets/wallpaper-2572384.jpg&lt;/code&gt;  文件，也可以是一个某网址。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果文章是一个  &lt;code&gt;gallery post&lt;/code&gt;  ，即 Front Matter 设置了  &lt;code&gt;photos&lt;/code&gt;  ，则会封面会显示设置的第一张图片。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;title: Gallery Post
-photos:
-- assets/wallpaper-2572384.jpg
-- assets/wallpaper-2311325.jpg
-- assets/wallpaper-878514.jpg
-- http://placehold.it/350x150.jpg
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;此时默认会显示第一个图片，即位于  &lt;code&gt;&amp;lt;root&amp;gt;/source/assets/&lt;/code&gt;  目录里的  &lt;code&gt;wallpaper-2572384.jpg&lt;/code&gt;  。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果站点配置中设置了  &lt;code&gt;post_asset_folder: true&lt;/code&gt;  ，那么上述本地图片路径应为  &lt;code&gt;&amp;lt;root&amp;gt;/source/_posts/文章同名的文件夹/assets/wallpaper-2572384.jpg&lt;/code&gt;  ，当然此时  &lt;code&gt;assets&lt;/code&gt;  目录可以省掉。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果以上设置均不存在，将显示一张随机图片，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcvIyVFOSU5QSU4RiVFNiU5QyVCQSVFNSU5QiVCRSVFNSVCQSU5Mw==&#34;&gt;随机图库配置戳此&lt;/span&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;-4&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-4&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTUlOUIlQkUlRTclODklODclRTUlQjElOTUlRTclQTQlQkElRTQlQjglOEUlRTclOUIlQjglRTUlODYlOEM=&#34;&gt;#&lt;/span&gt;图片展示与相册&lt;/h1&gt;
-&lt;p&gt;在文章的 Front Matter 设置  &lt;code&gt;fancybox: false&lt;/code&gt;  ，可以关闭文章页的图片展示功能。&lt;br /&gt;
-使用&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL21pcm9tYW5uaW5vLmdpdGh1Yi5pby9KdXN0aWZpZWQtR2FsbGVyeS8=&#34;&gt; Justified-Gallery&lt;/span&gt; 对 Gallery Post 内图案进行排列。&lt;/p&gt;
-&lt;p&gt;下面介绍一些小技巧：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;让图案下方显示  &lt;code&gt;title&lt;/code&gt;  的 markdown 代码&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;![这里是 alt](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;这里是 title&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;这里是alt&#34; /&gt; 这里是 title&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;设置图片的大小&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;![](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;定义图片大小 - 固定宽度和高度&amp;quot;)&amp;#123;height=&amp;quot;100px&amp;quot; width=&amp;quot;400px&amp;quot;&amp;#125;
-
-![](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;定义图片大小 - 固定宽度&amp;quot;)&amp;#123;width=&amp;quot;400px&amp;quot;&amp;#125;
-
-![](https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg &amp;quot;定义图片大小 - 固定高度&amp;quot;)&amp;#123;height=&amp;quot;100px&amp;quot;&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;定义图片大小-固定宽度和高度&#34; /&gt;定义图片大小 - 固定宽度和高度&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;定义图片大小-固定宽度&#34; /&gt;定义图片大小 - 固定宽度&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg&#34;&gt;&lt;img data-src=&#34;&#34; alt=&#34;定义图片大小-固定高度&#34; /&gt;定义图片大小 - 固定高度&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;除了在 Front Matter 里配置  &lt;code&gt;photos&lt;/code&gt;  可以显示相册图案列表外，还可以这样写&lt;/li&gt;
-&lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;## 图案列表 No.1
-![](https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg &amp;quot;这里是 title&amp;quot;)
-![](https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg)
-![](https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg)
-![](https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg)
-&amp;#123;.gallery&amp;#125;
-
-## 图案列表 No.2
-![](https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg)
-![](https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg)
-![](https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg)
-![](https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg)
-&amp;#123;.gallery data-height=&amp;quot;120&amp;quot;&amp;#125;
-data-height` 用来设置每行的高度，默认为 `220
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;-5&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-5&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTUlOUIlQkUlRTYlQTElODglRTUlODglOTclRTglQTElQThubzE=&#34;&gt;#&lt;/span&gt;图案列表 No.1&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg&#34; alt=&#34;这里是title&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;-6&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-6&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTUlOUIlQkUlRTYlQTElODglRTUlODglOTclRTglQTElQThubzI=&#34;&gt;#&lt;/span&gt;图案列表 No.2&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg&#34;&gt;&lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg&#34; alt=&#34;img&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;-7&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-7&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTglODclQUElRTUlQUUlOUElRTQlQjklODklRTklQTElQjUlRTklOUQlQTIlRTklODUlOEQlRTglODklQjI=&#34;&gt;#&lt;/span&gt;自定义页面配色&lt;/h1&gt;
-&lt;p&gt;主题配色全部在  &lt;code&gt;&amp;lt;root&amp;gt;/themes/shoka/source/css/_colors.styl&lt;/code&gt;  文件中，可以自行查看。&lt;/p&gt;
-&lt;p&gt;在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录新建文件  &lt;code&gt;colors.styl&lt;/code&gt;  ，在此文件中添改样式。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;自定义  &lt;code&gt;colors.styl&lt;/code&gt;  文件将覆盖主题默认样式，为了避免出错，请保证原有样式名均存在，在原有样式基础上进行增删改。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;主题支持在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录建立三个自定义  &lt;code&gt;styl&lt;/code&gt;  文件：&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;自定义文件名&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;对应默认样式文件&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;样式功能&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;colors.styl&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;_colors.styl&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;页面配色&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;iconfont.styl&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;_iconfont.styl&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9jb25maWcvI2ljb25mb250JUU1JTlCJUJFJUU2JUEwJTg3&#34;&gt;图标样式&lt;/span&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;code&gt;custom.styl&lt;/code&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;-&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;任意自定义样式&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h1 id=&#34;-8&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-8&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTglODclQUElRTUlQUUlOUElRTQlQjklODklRTQlQjglQkIlRTklQTIlOTglRTUlOUIlQkUlRTclODklODc=&#34;&gt;#&lt;/span&gt;自定义主题图片&lt;/h1&gt;
-&lt;p&gt;如果想要修改主题的  &lt;code&gt;&amp;lt;root&amp;gt;/themes/shoka/source/images/&lt;/code&gt;  目录内的某张图片，请在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录新建目录  &lt;code&gt;images&lt;/code&gt;  ，并在这个文件夹中添加同名文件，部署时将自动覆盖主题内的默认图片。&lt;/p&gt;
-&lt;p&gt;可以用此方法自定义头像、打赏二维码等图片，并且避免覆盖更新主题时遗失自定义文件。&lt;/p&gt;
-&lt;h1 id=&#34;-9&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#-9&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9kaXNwbGF5LyMlRTglODclQUElRTUlQUUlOUElRTQlQjklODklRTglQUYlQUQlRTglQTglODAlRTUlOEMlODU=&#34;&gt;#&lt;/span&gt;自定义语言包&lt;/h1&gt;
-&lt;p&gt;本功能参考 NexT，主要可以用来定义菜单等处显示的文字，且可以方便主题无脑覆盖升级。&lt;/p&gt;
-&lt;p&gt;在  &lt;code&gt;&amp;lt;root&amp;gt;/source/_data/&lt;/code&gt;  目录新建文件  &lt;code&gt;languages.yml&lt;/code&gt;  。&lt;/p&gt;
-&lt;p&gt;按照以下格式添加配置项：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# language
-zh-CN:
-  # items
-  post:
-    copyright:
-      # the translation you perfer
-      author: 本文博主
-en:
-  menu:
-    travellings: Travellings
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;可以参考主题目录下的  &lt;code&gt;example/source/_data&lt;/code&gt;  文件夹。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;站点配置及文件的 Front Matter 中，  &lt;code&gt;language&lt;/code&gt;  项只支持  &lt;code&gt;zh-CN&lt;/code&gt;  、  &lt;code&gt;zh-HK&lt;/code&gt;  、  &lt;code&gt;zh-TW&lt;/code&gt;  、  &lt;code&gt;ja&lt;/code&gt;  、  &lt;code&gt;en&lt;/code&gt;  。&lt;br /&gt;
-类似写成  &lt;code&gt;zh_CN&lt;/code&gt;  这样是不可以的。&lt;/p&gt;
-&lt;/blockquote&gt;
 </content>
         <category term="shoka" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/shoka/" />
         <updated>2021-04-02T16:13:14.000Z</updated>
@@ -2304,6 +2304,15 @@ sequenceDiagram
         <updated>2021-04-02T16:13:14.000Z</updated>
     </entry>
     <entry>
+        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/wallpaper/%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8/</id>
+        <title>⛄电脑壁纸☃</title>
+        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/wallpaper/%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8/"/>
+        <content type="html">&lt;p class=&#34;gallery&#34; data-height=&#34;120&#34;&gt;## 图案列表 No.1 &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg&#34; alt=&#34;&#34; title=&#34;这里是 title&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg&#34; alt=&#34;&#34; /&gt; {.gallery} ## 图案列表 No.2 &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</content>
+        <category term="wallpaper" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/wallpaper/" />
+        <updated>2021-04-02T16:13:14.000Z</updated>
+    </entry>
+    <entry>
         <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/website/website/</id>
         <title>⛄柴大大网站导航☃</title>
         <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/website/website/"/>
@@ -2494,15 +2503,6 @@ color: ;&#34;&gt;&lt;span class=&#34;exturl image&#34; data-url=&#34;aHR0cHM6Ly9
 &lt;/div&gt;&lt;/details&gt;
 </content>
         <category term="网站" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/website/" />
-        <updated>2021-04-02T16:13:14.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/wallpaper/%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8/</id>
-        <title>⛄电脑壁纸☃</title>
-        <link rel="alternate" href="https://flechazoclf.github.io/FlechazoCLF.github.io/2021/04/03/wallpaper/%E7%94%B5%E8%84%91%E5%A3%81%E7%BA%B8/"/>
-        <content type="html">&lt;p class=&#34;gallery&#34; data-height=&#34;120&#34;&gt;## 图案列表 No.1 &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg&#34; alt=&#34;&#34; title=&#34;这里是 title&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg&#34; alt=&#34;&#34; /&gt; {.gallery} ## 图案列表 No.2 &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg&#34; alt=&#34;&#34; /&gt; &lt;img data-src=&#34;https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-</content>
-        <category term="wallpaper" scheme="https://flechazoclf.github.io/FlechazoCLF.github.io/categories/wallpaper/" />
         <updated>2021-04-02T16:13:14.000Z</updated>
     </entry>
     <entry>
