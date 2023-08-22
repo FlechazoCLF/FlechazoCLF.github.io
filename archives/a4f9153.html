@@ -1,0 +1,294 @@
+<!-- build time:Tue Aug 22 2023 21:03:38 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/map/js/china.min.js"></script><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="yandex-verification" content="fadb7324b0f3dbe2"><link rel="alternate" type="application/rss+xml" title="我在人间贩卖黄昏，只为收集世间温柔遇见你." href="https://flechazoclf.github.io/FlechazoCLF.github.io/rss.xml"><link rel="alternate" type="application/atom+xml" title="我在人间贩卖黄昏，只为收集世间温柔遇见你." href="https://flechazoclf.github.io/FlechazoCLF.github.io/atom.xml"><link rel="alternate" type="application/json" title="我在人间贩卖黄昏，只为收集世间温柔遇见你." href="https://flechazoclf.github.io/FlechazoCLF.github.io/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><meta name="keywords" content="QT,数据库,Cpp"><link rel="canonical" href="https://flechazoclf.github.io/FlechazoCLF.github.io/archives/a4f9153.html"><title>QT数据库的基本使用 - QT - 技术教程🎃 | flechazo💖一见钟情 = 我在人间贩卖黄昏，只为收集世间温柔遇见你. = 有幸来到人间的旅人</title><meta name="generator" content="Hexo 6.2.0"></head><body itemscope="" itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">QT数据库的基本使用</h1><div class="meta"><span class="item" title="创建时间：2023-08-13 00:00:00"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">发表于</span> <time itemprop="dateCreated datePublished" datetime="2023-08-13T00:00:00+08:00">2023-08-13</time></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">flechazo💖一见钟情</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><img src="/archives/a4f9153.html../../../wallpaper/35.png"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">首页</a></span><i class="ic i-angle-right"></i> <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/categories/technique/" itemprop="item" rel="index" title="分类于 技术教程🎃"><span itemprop="name">技术教程🎃</span></a><meta itemprop="position" content="1"></span><i class="ic i-angle-right"></i> <span class="current" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/categories/technique/QT/" itemprop="item" rel="index" title="分类于 QT"><span itemprop="name">QT</span></a><meta itemprop="position" content="2"></span></div><article itemscope="" itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://flechazoclf.github.io/FlechazoCLF.github.io/archives/a4f9153.html"><span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="flechazo"><meta itemprop="description" content="有幸来到人间的旅人, 我在人间贩卖星光"></span><span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><meta itemprop="name" content="我在人间贩卖黄昏，只为收集世间温柔遇见你."></span><div class="body md" itemprop="articleBody"><p>用 QT 实现数据库的增删改查</p><p>QT 随便整几个控件 + 4 个按钮</p><p><img data-src="../../../img.assets/23-8-13QT%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.assets/image-20230810085904644.png" alt="image-20230810085904644"></p><p>可以用 navicat 打开看一下</p><p><img data-src="../../../img.assets/23-8-13QT%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.assets/image-20230810092510251.png" alt="image-20230810092510251"></p><p>数据库初始化</p><pre><code class="language-c++">//初始化
+bool bmysqlInit(){
+    //1、打印驱动列表
+    qDebug()&lt;&lt;QSqlDatabase::drivers();
+    //2、检测已连接的方式 - 默认连接名
+    if(QSqlDatabase::contains("qt_sql_default_connection")){
+        mydb = QSqlDatabase::database("qt_sql_default_connection");
+    }
+    else{
+        mydb = QSqlDatabase::addDatabase("QSQLITE");
+    }
+    //3、设置数据库路径，不存在则创建
+    mydb.setDatabaseName("flechazo.db");
+    //4、测试打开
+    if(mydb.open()){
+        qDebug()&lt;&lt;"open success";
+        bmysqlcreattable();
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;mydb.lastError();
+        return false;
+    }
+    return true;
+}
+
+bool bmysqlcreattable(){
+    //sql语句不熟悉的推荐《sql必知必会》，轻松入门
+    //如果不存在则创建my_table表
+    //id自增,name唯一
+    const QString sql=R"(
+                      CREATE TABLE IF NOT EXISTS  my_table (
+                      id   INTEGER   PRIMARY KEY AUTOINCREMENT NOT NULL,
+                      name CHAR (50) UNIQUE NOT NULL,
+                      age  INTEGER
+                      );)";
+    //QSqlQuery构造前，需要mydb已打开并连接
+    //未指定mydb或者mydb无效时使用默认连接进行操作
+    QSqlQuery query;
+
+    if(query.exec(sql)){
+        qDebug()&lt;&lt;"init table success";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+</code></pre><p>增删改查</p><pre><code class="language-c++">//插入数据
+bool bmysqlinsert(const QString &amp;name, int age)
+{
+    QSqlQuery query;
+    //绑定值，待定变量默认问号，可自定义
+    query.prepare(R"(INSERT INTO my_table(name,age) VALUES(?,?);)");
+    query.addBindValue(name);
+    query.addBindValue(age);
+    if(query.exec()){
+        qDebug()&lt;&lt;"insert successful!";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+
+//删除数据
+bool bmysqldelete(const QString &amp;name)
+{
+    QSqlQuery query;
+    query.prepare(R"(DELETE FROM my_table WHERE name=?;)");
+    query.addBindValue(name);
+    if(query.exec()){
+        qDebug()&lt;&lt;"insert successful!";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+
+//更新数据
+bool vmysqlupdate(const QString &amp;name, int age)
+{
+    QSqlQuery query;
+    //绑定值，待定变量默认问号，可自定义
+    query.prepare(R"(UPDATE my_table SET age=:age WHERE name=:name;)");
+    query.bindValue(":name",name);//通过自定义的别名来替代
+    query.bindValue(":age",age);
+    if(query.exec()){
+        qDebug()&lt;&lt;"insert successful!";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+
+//查询数据
+int imysqlsearch(const QString &amp;name)
+{
+    QSqlQuery query;
+    query.exec(QString(R"(SELECT age FROM my_table WHERE name='%1';)")
+               .arg(name));
+
+    //获取查询结果的第0个值，
+    //如果结果是多行数据，可用while(query.next()){}遍历每一行
+    int ageValue=-1;
+    if(query.next()){
+        ageValue=query.value(0).toInt();
+    }
+    qDebug()&lt;&lt;ageValue;
+    return ageValue;
+}
+</code></pre><p>完整的代码，具体的项目很乱没有整理</p><pre><code class="language-c++">#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include &lt;QSqlDatabase&gt;
+#include &lt;QDebug&gt;
+#include &lt;QSqlError&gt;
+#include &lt;QSqlQuery&gt;
+#include &lt;QSqlRecord&gt;
+#include &lt;QMessageBox&gt;
+
+static QSqlDatabase mydb;
+
+bool bmysqlcreattable();
+
+//初始化
+bool bmysqlInit(){
+    //1、打印驱动列表
+    qDebug()&lt;&lt;QSqlDatabase::drivers();
+    //2、检测已连接的方式 - 默认连接名
+    if(QSqlDatabase::contains("qt_sql_default_connection")){
+        mydb = QSqlDatabase::database("qt_sql_default_connection");
+    }
+    else{
+        mydb = QSqlDatabase::addDatabase("QSQLITE");
+    }
+    //3、设置数据库路径，不存在则创建
+    mydb.setDatabaseName("flechazo.db");
+    //4、测试打开
+    if(mydb.open()){
+        qDebug()&lt;&lt;"open success";
+        bmysqlcreattable();
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;mydb.lastError();
+        return false;
+    }
+    return true;
+}
+
+
+bool bmysqlcreattable(){
+    //sql语句不熟悉的推荐《sql必知必会》，轻松入门
+    //如果不存在则创建my_table表
+    //id自增,name唯一
+    const QString sql=R"(
+                      CREATE TABLE IF NOT EXISTS  my_table (
+                      id   INTEGER   PRIMARY KEY AUTOINCREMENT NOT NULL,
+                      name CHAR (50) UNIQUE NOT NULL,
+                      age  INTEGER
+                      );)";
+    //QSqlQuery构造前，需要mydb已打开并连接
+    //未指定mydb或者mydb无效时使用默认连接进行操作
+    QSqlQuery query;
+
+    if(query.exec(sql)){
+        qDebug()&lt;&lt;"init table success";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+
+
+
+//插入数据
+bool bmysqlinsert(const QString &amp;name, int age)
+{
+    QSqlQuery query;
+    //绑定值，待定变量默认问号，可自定义
+    query.prepare(R"(INSERT INTO my_table(name,age) VALUES(?,?);)");
+    query.addBindValue(name);
+    query.addBindValue(age);
+    if(query.exec()){
+        qDebug()&lt;&lt;"insert successful!";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+
+//删除数据
+bool bmysqldelete(const QString &amp;name)
+{
+    QSqlQuery query;
+    query.prepare(R"(DELETE FROM my_table WHERE name=?;)");
+    query.addBindValue(name);
+    if(query.exec()){
+        qDebug()&lt;&lt;"insert successful!";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+
+//更新数据
+bool vmysqlupdate(const QString &amp;name, int age)
+{
+    QSqlQuery query;
+    //绑定值，待定变量默认问号，可自定义
+    query.prepare(R"(UPDATE my_table SET age=:age WHERE name=:name;)");
+    query.bindValue(":name",name);//通过自定义的别名来替代
+    query.bindValue(":age",age);
+    if(query.exec()){
+        qDebug()&lt;&lt;"insert successful!";
+    }else{
+        //打印sql语句错误信息
+        qDebug()&lt;&lt;"init table error"&lt;&lt;query.lastError();
+        return false;
+    }
+    return true;
+}
+
+//查询数据
+int imysqlsearch(const QString &amp;name)
+{
+    QSqlQuery query;
+    query.exec(QString(R"(SELECT age FROM my_table WHERE name='%1';)")
+               .arg(name));
+
+    //获取查询结果的第0个值，
+    //如果结果是多行数据，可用while(query.next()){}遍历每一行
+    int ageValue=-1;
+    if(query.next()){
+        ageValue=query.value(0).toInt();
+    }
+    qDebug()&lt;&lt;ageValue;
+    return ageValue;
+}
+
+void MainWindow::on_pushButton_mysql_open_clicked()
+{
+
+    //检测已连接的方式 - 自定义连接名
+    if(QSqlDatabase::contains("flechazo_mysql"))
+        mydb = QSqlDatabase::database("flechazo_mysql");
+    else
+        mydb = QSqlDatabase::addDatabase("QSQLITE","flechazo_mysql");
+    //设置数据库路径，不存在则创建
+    mydb.setDatabaseName("flechazo.db");
+    //SQLite不需要用户名和密码
+    //mydb.setUserName("flechazo");
+    //mydb.setPassword("unique");
+
+    //打开数据库
+    if(mydb.open()){
+        qDebug()&lt;&lt;"open success";
+    }
+}
+
+void MainWindow::on_pushButton_mysql_close_clicked()
+{
+    //关闭数据库
+    mydb.close();
+}
+
+void MainWindow::on_pushButton_add_clicked()
+{
+    QString name = ui-&gt;lineEdit_mysql_creat_excel_number-&gt;text();
+    int age = ui-&gt;lineEdit_mysql_creat_excel_time-&gt;text().toInt();
+    bmysqlinsert(name,age);
+    qDebug()&lt;&lt;"insert successful!";
+}
+
+
+void MainWindow::on_pushButton_read_clicked()
+{
+    //读出数据库
+    QString name=ui-&gt;lineEdit_mysql_creat_excel_number-&gt;text();
+    ui-&gt;lineEdit_mysql_creat_excel_time-&gt;setText(QString::number(imysqlsearch(name)));
+    qDebug()&lt;&lt;"read successful!";
+}
+
+</code></pre><div class="tags"><a href="/tags/QT/" rel="tag"><i class="ic i-tag"></i> QT</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2023-08-22 21:01:58" itemprop="dateModified" datetime="2023-08-22T21:01:58+08:00">2023-08-22</time> </span><span id="archives/a4f9153.html" class="item leancloud_visitors" data-flag-title="QT数据库的基本使用" title="阅读次数"><span class="icon"><i class="ic i-eye"></i> </span><span class="text">阅读次数</span> <span class="leancloud-visitors-count"></span> <span class="text">次</span></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.png" alt="flechazo 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.png" alt="flechazo 支付宝"><p>支付宝</p></div><div><img data-src="/images/paypal.png" alt="flechazo 贝宝"><p>贝宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者： </strong>flechazo <i class="ic i-at"><em>@</em></i>我在人间贩卖黄昏，只为收集世间温柔遇见你.</li><li class="link"><strong>本文链接：</strong> <a href="https://flechazoclf.github.io/FlechazoCLF.github.io/archives/a4f9153.html" title="QT数据库的基本使用">https://flechazoclf.github.io/FlechazoCLF.github.io/archives/a4f9153.html</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/archives/e3153979.html" itemprop="url" rel="prev" data-background-image="/archives/e3153979.html../../../wallpaper/55.png" title="一文彻底理解原码反码和补码"><span class="type">上一篇</span> <span class="category"><i class="ic i-flag"></i> C语言</span><h3>一文彻底理解原码反码和补码</h3></a></div><div class="item right"><a href="/archives/e52cfcec.html" itemprop="url" rel="next" data-background-image="/archives/e52cfcec.html../../../wallpaper/14.png" title="QT读写word文档"><span class="type">下一篇</span> <span class="category"><i class="ic i-flag"></i> QT</span><h3>QT读写word文档</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/archives/8ada3c3f.html" rel="bookmark" title="qt程序打包">qt程序打包</a></li><li><a href="/archives/f04b09b7.html" rel="bookmark" title="qt读写excel表格">qt读写excel表格</a></li><li><a href="/archives/ae097b6e.html" rel="bookmark" title="qt键值对实现指令解析与拼凑">qt键值对实现指令解析与拼凑</a></li><li><a href="/archives/3d4fc45a.html" rel="bookmark" title="QT中的数据类型转换小本本">QT中的数据类型转换小本本</a></li><li><a href="/archives/66210242.html" rel="bookmark" title="QT工厂配置工具">QT工厂配置工具</a></li><li><a href="/archives/ea828494.html" rel="bookmark" title="QT一键运行bat脚本文件">QT一键运行bat脚本文件</a></li><li><a href="/archives/85c52c40.html" rel="bookmark" title="串口通信中的接收与发送队列处理大数据">串口通信中的接收与发送队列处理大数据</a></li><li><a href="/archives/d989430a.html" rel="bookmark" title="一种flash的存储方式,基于GD25Q64">一种flash的存储方式,基于GD25Q64</a></li><li><a href="/archives/cd721bd1.html" rel="bookmark" title="QTsocket连接">QTsocket连接</a></li><li class="active"><a href="/archives/a4f9153.html" rel="bookmark" title="QT数据库的基本使用">QT数据库的基本使用</a></li><li><a href="/archives/e52cfcec.html" rel="bookmark" title="QT读写word文档">QT读写word文档</a></li><li><a href="/archives/7870ba02.html" rel="bookmark" title="QT读取bin文件">QT读取bin文件</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="flechazo" data-src="/images/avatar.jpg"><p class="name" itemprop="name">flechazo</p><div class="description" itemprop="description">我在人间贩卖星光</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">118</span> <span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">40</span> <span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">37</span> <span class="name">标签</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL0Fnb25pMzdD" title="https://github.com/Agoni37C"><i class="ic i-github"></i></span> <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaXVfc2hlbmc=" title="https://www.zhihu.com/people/jiu_sheng"><i class="ic i-zhihu"></i></span> <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvcGxheWxpc3Q/aWQ9NzE3NTI4NzIwNQ==" title="https://music.163.com/#/playlist?id=7175287205"><i class="ic i-cloud-music"></i></span> <span class="exturl item weixin" data-url="aHR0cDovL21wLndlaXhpbi5xcS5jb20vbXAvaG9tZXBhZ2U/X19iaXo9TXpBeE9ETTJOVFEwTnc9PSZoaWQ9MiZzbj05ZThkZGVkOGU3MTgxYTA4YTA1MjFiOTQ2MjIyY2Q3MiZzY2VuZT0xOCN3ZWNoYXRfcmVkaXJlY3Q=" title="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxODM2NTQ0Nw==&amp;hid=2&amp;sn=9e8dded8e7181a08a0521b946222cd72&amp;scene=18#wechat_redirect"><i class="ic i-address-card"></i></span> <span class="exturl item bilibili" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNDQxODc1ODQ0P3NwbV9pZF9mcm9tPTMzMy4xMDA3LjAuMA==" title="https://space.bilibili.com/441875844?spm_id_from=333.1007.0.0"><i class="ic i-bilibili"></i></span></div><ul class="menu"><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAwLw=="><i class="ic i-home"></i>首页</span></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>小伙伴们</a></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAxLw=="><i class="ic i-magic"></i>导航页🚀</span></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>小天地🍼</a><ul class="submenu"><li class="item"><a href="/broken-thoughts/" rel="section"><i class="ic i-heart"></i>碎碎念</a></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAyLw=="><i class="ic i-heart"></i>云小🎪盘</span></li><li class="item"><a href="/mypages/Videoparse/" rel="section"><i class="ic i-heart"></i>视频解析</a></li><li class="item"><a href="/movies/" rel="section"><i class="ic i-heart"></i>影集</a></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDA5Lw=="><i class="ic i-heart"></i>游戏🎮小站</span></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDA2Lw=="><i class="ic i-heart"></i>动感天地🎶</span></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAzLw=="><i class="ic i-heart"></i>4k壁纸❄</span></li></ul></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>有趣单页</a><ul class="submenu"><li class="item"><a href="/mypageslayout/barrage/" rel="section"><i class="ic i-list-alt"></i>弹幕墙</a></li><li class="item"><a href="/mypages/crossing-the-cliff/" rel="section"><i class="ic i-th"></i>圣诞老人过桥</a></li><li class="item"><a href="/mypages/eat/" rel="section"><i class="ic i-tags"></i>今天吃什么</a></li><li class="item"><a href="/mypages/clock/" rel="section"><i class="ic i-list-alt"></i>好看的闹钟</a></li><li class="item"><a href="/mypages/QQpage/" rel="section"><i class="ic i-list-alt"></i>QQ展示页</a></li><li class="item"><a href="/mypages/jianli/" rel="section"><i class="ic i-th"></i>简历</a></li><li class="item"><a href="/mypages/love/" rel="section"><i class="ic i-tags"></i>执子之手</a></li><li class="item"><a href="/mypages/tiangou/" rel="section"><i class="ic i-list-alt"></i>舔狗语录</a></li><li class="item"><a href="/mypages/washing/" rel="section"><i class="ic i-th"></i>洗衣机</a></li><li class="item"><a href="/mypages/todolist/" rel="section"><i class="ic i-tags"></i>行动清单</a></li><li class="item"><a href="/mypages/yindao2/" rel="section"><i class="ic i-list-alt"></i>引导页</a></li></ul></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/archives/e3153979.html" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/archives/e52cfcec.html" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/QT/" title="分类于 QT">QT</a></div><span><a href="/archives/66210242.html" title="QT工厂配置工具">QT工厂配置工具</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/GIT/" title="分类于 GIT">GIT</a></div><span><a href="/archives/875ef695.html" title="Failed-to-connect-to-127.0.0.1-port-1080拒绝连接">Failed-to-connect-to-127.0.0.1-port-1080拒绝连接</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a></div><span><a href="/archives/22049b8e.html" title="云服务器搭建Frps实现内网穿透">云服务器搭建Frps实现内网穿透</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/microcosm/" title="分类于 小世界✨">小世界✨</a> <i class="ic i-angle-right"></i> <a href="/categories/microcosm/%E9%82%A3%E4%BA%9B%E5%8A%A8%E4%BA%BA%E5%BF%83%E5%BC%A6%E7%9A%84%E5%8F%A5%E5%AD%90/" title="分类于 那些动人心弦的句子">那些动人心弦的句子</a></div><span><a href="/archives/31069093.html" title="🍛人生感悟">🍛人生感悟</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/tools/" title="分类于 实用小工具">实用小工具</a></div><span><a href="/archives/cf625652.html" title="⛄常用的超级方便的工具☃">⛄常用的超级方便的工具☃</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/%E6%A8%A1%E7%94%B5/" title="分类于 模电">模电</a></div><span><a href="/archives/c36ae3b3.html" title="27个模拟电路基础知识！">27个模拟电路基础知识！</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/%E5%B5%8C%E5%85%A5%E5%BC%8F/" title="分类于 嵌入式">嵌入式</a></div><span><a href="/archives/d3a54c58.html" title="单片机代码框架">单片机代码框架</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/C%E8%AF%AD%E8%A8%80/" title="分类于 C语言">C语言</a></div><span><a href="/archives/8ef5993a.html" title="c语言异或的妙用">c语言异或的妙用</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/resources/" title="分类于 资源😜">资源😜</a> <i class="ic i-angle-right"></i> <a href="/categories/resources/software/" title="分类于 software">software</a></div><span><a href="/archives/44eaa4d1.html" title="🍲软件资源">🍲软件资源</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/QT/" title="分类于 QT">QT</a></div><span><a href="/archives/d989430a.html" title="一种flash的存储方式,基于GD25Q64">一种flash的存储方式,基于GD25Q64</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">© 2020 – <span itemprop="copyrightYear">2023</span> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">flechazo @ flechazo💖一见钟情</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="站点总字数">381k 字</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="站点阅读时长">5:46</span></div><div class="powered-by">基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config="" type="text/javascript">var LOCAL={path:"archives/a4f9153.html",favicon:{show:"flechazo",hide:"(´Д｀)客官别走！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script><script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html><!-- rebuild by hrmmi -->
