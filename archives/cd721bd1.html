@@ -1,0 +1,227 @@
+<!-- build time:Mon Feb 10 2025 22:46:08 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><script src="http://echarts.baidu.com/dist/echarts.common.min.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/dist/echarts.min.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@4.7.0/map/js/china.min.js"></script><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="yandex-verification" content="fadb7324b0f3dbe2"><link rel="alternate" type="application/rss+xml" title="我在人间贩卖黄昏，只为收集世间温柔遇见你." href="https://flechazoclf.github.io/FlechazoCLF.github.io/rss.xml"><link rel="alternate" type="application/atom+xml" title="我在人间贩卖黄昏，只为收集世间温柔遇见你." href="https://flechazoclf.github.io/FlechazoCLF.github.io/atom.xml"><link rel="alternate" type="application/json" title="我在人间贩卖黄昏，只为收集世间温柔遇见你." href="https://flechazoclf.github.io/FlechazoCLF.github.io/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&amp;display=swap&amp;subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><meta name="keywords" content="QT,网络连接,socket,Cpp"><link rel="canonical" href="https://flechazoclf.github.io/FlechazoCLF.github.io/archives/cd721bd1.html"><title>QTsocket连接 - QT - 技术教程🎃 | flechazo = 我在人间贩卖黄昏，只为收集世间温柔遇见你. = 有幸来到人间的旅人</title><meta name="generator" content="Hexo 6.2.0"></head><body itemscope="" itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope="" itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">QTsocket连接</h1><div class="meta"><span class="item" title="创建时间：2023-08-07 00:00:00"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">发表于</span> <time itemprop="dateCreated datePublished" datetime="2023-08-07T00:00:00+08:00">2023-08-07</time></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">flechazo</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><img src="/archives/cd721bd1.html../../../wallpaper/38.png"></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">首页</a></span><i class="ic i-angle-right"></i> <span itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/categories/technique/" itemprop="item" rel="index" title="分类于 技术教程🎃"><span itemprop="name">技术教程🎃</span></a><meta itemprop="position" content="1"></span><i class="ic i-angle-right"></i> <span class="current" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem"><a href="/categories/technique/QT/" itemprop="item" rel="index" title="分类于 QT"><span itemprop="name">QT</span></a><meta itemprop="position" content="2"></span></div><article itemscope="" itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://flechazoclf.github.io/FlechazoCLF.github.io/archives/cd721bd1.html"><span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="flechazo"><meta itemprop="description" content="有幸来到人间的旅人, 我在人间贩卖星光"></span><span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><meta itemprop="name" content="我在人间贩卖黄昏，只为收集世间温柔遇见你."></span><div class="body md" itemprop="articleBody"><h2 id="qt的socket服务端连接"><a class="anchor" href="#qt的socket服务端连接">#</a> QT 的 socket 服务端连接</h2><p>对于一个联网的设备，socket 长连接再熟悉不过了。那么下位机的 demo 待我整理后给大家分享出来。</p><h2 id="环境"><a class="anchor" href="#环境">#</a> 环境：</h2><ul><li>下位机：<ul><li>GD32F303（工作中用的）<ul><li>CAT14G 模块配合工作使用</li><li>CAT1 配置为 socket 连接</li></ul></li><li>ESP32S3（个人的小爱好，做了一个小手表）<ul><li>wifi 连接，http 配网</li><li>socket 连接</li></ul></li></ul></li><li>上位机：<ul><li>QT（平时改动比较大，所以界面很丑，大家不要介意哈）</li><li>串口连接</li><li>socket 连接</li></ul></li></ul><p><img data-src="../../../img.assets/23-8-7QTSocket%E8%BF%9E%E6%8E%A5.assets/image-20230802090240217.png" alt="image-20230802090240217"></p><p>那么我们开始吧</p><h2 id="1-下位机"><a class="anchor" href="#1-下位机">#</a> 1、下位机</h2><h3 id="gd32f303cat1模组"><a class="anchor" href="#gd32f303cat1模组">#</a> GD32F303+CAT1 模组</h3><p>请参考：CAT1 模组 AT 指令自动配置</p><p></p><div class="links"><div class="item" title="通过AT指令配置CAT1 4G模组" style="--block-color:#21d4fd"><span class="exturl image" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NDY3Nzk0MTc=" data-background-image="https://foruda.gitee.com/avatar/1680342439464493317/9010997_flechazo5201314_1680342439.png!avatar200"></span><div class="info"><span class="exturl title" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NDY3Nzk0MTc=">通过AT指令配置CAT1 4G模组</span><p class="desc">https://zhuanlan.zhihu.com/p/646779417</p></div></div></div><p></p><h3 id="esp32s3"><a class="anchor" href="#esp32s3">#</a> ESP32S3</h3><p>后期整理好啦再更新到这</p><h2 id="2-上位机"><a class="anchor" href="#2-上位机">#</a> 2、上位机</h2><h3 id="首先你需要有这个界面"><a class="anchor" href="#首先你需要有这个界面">#</a> 首先你需要有这个界面</h3><p>&lt;img src="../../../img.assets/23-8-7QTSocket%E8%BF%9E%E6%8E%A5.assets/image-20230802093630566.png" alt="image-20230802093630566" style="zoom:50%;" /&gt;</p><h4 id="本地ip地址"><a class="anchor" href="#本地ip地址">#</a> 本地 IP 地址</h4><p>用于 socket 连接</p><h4 id="本地端口"><a class="anchor" href="#本地端口">#</a> 本地端口</h4><p>用于 socket 连接</p><h4 id="侦听按钮"><a class="anchor" href="#侦听按钮">#</a> 侦听按钮</h4><p>触发侦听事件</p><h4 id="消息发送接收"><a class="anchor" href="#消息发送接收">#</a> 消息发送接收</h4><p>那么开始愉快的码代码吧！</p><p>项目中的.pro 文件中需要添加这个哦</p><pre><code class="language-c++">QT += network
+</code></pre><p><img data-src="../../../img.assets/23-8-7QTSocket%E8%BF%9E%E6%8E%A5.assets/image-20230802095121964.png" alt="image-20230802095121964"></p><h3 id="初始化socke"><a class="anchor" href="#初始化socke">#</a> 初始化 socke</h3><pre><code class="language-c++">//头文件要加上这三个
+#include &lt;QTcpserver&gt;
+#include &lt;QTcpSocket&gt;
+#include &lt;QNetworkInterface&gt;
+
+void MainWindow::vsocketserverInit(void){
+    //客户端
+    socket = new QTcpSocket();
+    //服务端
+    server = new QTcpServer();
+    //UDP可以广播的，实际没有使用
+    m_pUdpSocket = new QUdpSocket();
+
+    // 获取本地的IP
+    for (int i = 0; i &lt; QNetworkInterface().allAddresses().length(); ++i) {
+        ui-&gt;comboBoxData_Socket_Server_IP-&gt;addItem(QNetworkInterface().allAddresses().at(i).toString());
+    }
+    ui-&gt;comboBoxData_Socket_Server_IP-&gt;setCurrentText("127.0.0.1");
+    ui-&gt;comboBoxData_Socket_Server_COM-&gt;addItem("8090");
+    ui-&gt;comboBoxData_Socket_Server_Select_Mode-&gt;addItem("指定模式");
+    ui-&gt;comboBoxData_Socket_Server_Select_Mode-&gt;addItem("广播模式");
+
+    QPalette pe;
+    pe.setColor(QPalette::WindowText, Qt::blue);
+    ui-&gt;label_Socket_Server_Status-&gt;setPalette(pe);
+    ui-&gt;label_Socket_Server_Status-&gt;setText("服务器未打开");
+
+    // 关联客户端连接信号newConnection
+    connect(server, &amp;QTcpServer::newConnection, this, &amp;MainWindow::server_New_Connect);
+
+    //创建一个查询的定时器
+    GetControllerID_Timer = new QTimer;
+
+    connect(GetControllerID_Timer, &amp;QTimer::timeout,this,&amp;MainWindow::vsocketGetControllerID_Send_timer);
+    GetControllerID_Timer-&gt;stop();
+}
+</code></pre><h3 id="侦听按键"><a class="anchor" href="#侦听按键">#</a> 侦听按键</h3><pre><code class="language-c++">void MainWindow::on_pushButton_Socket_Server_Connect_clicked()
+{
+    if (ui-&gt;pushButton_Socket_Server_Connect-&gt;text() == tr("侦听")) {
+        // 从输入端获取端口号
+        int port = ui-&gt;comboBoxData_Socket_Server_COM-&gt;currentText().toInt();
+
+        // 侦听指定的端口
+        if(!server-&gt;listen(QHostAddress::Any, port)) {
+            // 若出错，则输出错误信息
+            QMessageBox::information(this, tr("错误"), server-&gt;errorString(), QMessageBox::Yes);
+            return;
+        }
+        else {
+            // 修改按键文字
+            ui-&gt;pushButton_Socket_Server_Connect-&gt;setText("取消侦听");
+            QPalette pe;
+            pe.setColor(QPalette::WindowText, Qt::red);
+            ui-&gt;label_Socket_Server_Status-&gt;setPalette(pe);
+            ui-&gt;label_Socket_Server_Status-&gt;setText("服务器运行中...");
+        }
+
+        //-----------------------------启动FRPS-----------------------------
+        //这里我是自己搭建了内网穿透，将本地端口映射到服务器的公网上，相当于可以联网控制了
+        bfrpsstart(true);
+    }
+    else {
+        // 如果正在连接......
+        if(socket-&gt;state() == QAbstractSocket::ConnectedState) {
+            // 关闭连接
+            socket-&gt;disconnectFromHost();
+        }
+        // 取消侦听
+        server-&gt;close();
+        // 修改按键文字
+        ui-&gt;pushButton_Socket_Server_Connect-&gt;setText("侦听");
+        QPalette pe;
+        pe.setColor(QPalette::WindowText, Qt::blue);
+        ui-&gt;label_Socket_Server_Status-&gt;setPalette(pe);
+        ui-&gt;label_Socket_Server_Status-&gt;setText("服务器未打开");
+
+        ui-&gt;tableWidget_Socket_Server-&gt;clear();
+        //-----------------------------关闭FRPS-----------------------------
+        bfrpsstart(false);
+    }
+}
+</code></pre><h3 id="新客户端连接"><a class="anchor" href="#新客户端连接">#</a> 新客户端连接</h3><pre><code class="language-c++">//连接
+void MainWindow::server_New_Connect()
+{
+    // 获取客户端连接
+    socket = server-&gt;nextPendingConnection();
+    clientSocket.append(socket);
+
+    // 把连接到的客户端添加入tableWidget中
+    int currentRow = ui-&gt;tableWidget_Socket_Server-&gt;rowCount();
+    ui-&gt;tableWidget_Socket_Server-&gt;insertRow(currentRow);
+
+    QTableWidgetItem *item = new QTableWidgetItem();
+    QTableWidgetItem *item_2 = new QTableWidgetItem();
+    QTableWidgetItem *item_3 = new QTableWidgetItem();
+    QTableWidgetItem *item_4 = new QTableWidgetItem();
+    QTableWidgetItem *item_5 = new QTableWidgetItem();
+
+    item-&gt;setText(tr("%1").arg(QString::number(ui-&gt;tableWidget_Socket_Server-&gt;rowCount())));
+    item_2-&gt;setText(clientSocket[currentRow]-&gt;peerAddress().toString().mid(7));
+    item_3-&gt;setText(QString::number(clientSocket[currentRow]-&gt;peerPort()));
+    item_4-&gt;setText("00000000");
+    item_5-&gt;setText("在线");
+
+    ui-&gt;tableWidget_Socket_Server-&gt;setItem(currentRow, 0, item);
+    ui-&gt;tableWidget_Socket_Server-&gt;setItem(currentRow, 1, item_2);
+    ui-&gt;tableWidget_Socket_Server-&gt;setItem(currentRow, 2, item_3);
+    ui-&gt;tableWidget_Socket_Server-&gt;setItem(currentRow, 3, item_4);
+    ui-&gt;tableWidget_Socket_Server-&gt;setItem(currentRow, 4, item_5);
+
+    // 连接QTcpSocket的信号槽，以读取新数据
+    connect(socket, SIGNAL(readyRead()), this, SLOT(Socket_Server_Recieve_Data()));
+    connect(socket, SIGNAL(disconnected()), this, SLOT(Socket_Server_Dis_Connected()));
+
+    //--------------------------根据自己的需求添加------------------------------
+    //连接上之后发配置时间，我这里是业务需要
+    QString checktimedata = "000000000000000000000000";
+    checktimedata.append(checktime());
+    checktimedata.append(qstrCrcCalc(checktimedata));
+    checktimedata.append("FE");
+    checktimedata.insert(0,"FB");
+    vSocket_Server_Send(checktimedata);
+    //----------------------------------------------------------------------
+}
+
+//取消连接
+void MainWindow::Socket_Server_Dis_Connected()
+{
+    // 遍历寻找断开连接的是哪一个客户端
+    for(int i = 0; i &lt; clientSocket.length(); ++i) {
+        //判断连接状态
+        if(clientSocket[i]-&gt;state() == QAbstractSocket::UnconnectedState)
+        {
+            // 删除存储在tableWidget中的该客户端信息
+            for (int j = 0; j &lt; ui-&gt;tableWidget_Socket_Server-&gt;rowCount(); ++j) {
+                //判断IP是否和显示数据的IP一致
+                if (clientSocket[i]-&gt;peerAddress().toString().mid(7) == ui-&gt;tableWidget_Socket_Server-&gt;item(j, 1)-&gt;text()) {
+                    //判断端口是否一致，一致说明断开连接的就是这个客户端
+                    QString socketport = QString::number(clientSocket[i]-&gt;peerPort());
+                    if(socketport==ui-&gt;tableWidget_Socket_Server-&gt;item(j, 2)-&gt;text()){
+                        ui-&gt;tableWidget_Socket_Server-&gt;removeRow(j);
+                    }
+                }
+            }
+            // 删除存储在clientSocket列表中的客户端信息
+            clientSocket[i]-&gt;destroyed();
+            clientSocket.removeAt(i);
+        }
+    }
+}
+</code></pre><h3 id="处理发送"><a class="anchor" href="#处理发送">#</a> 处理发送</h3><pre><code class="language-c++">//发送,我这里有自己的业务需求，根据控制器的ID来找到所对应的IP和端口，去发送
+void MainWindow::vSocket_Server_Send_Flechazo(QString sendstr)
+{
+    QString data = sendstr;
+    if (data.isEmpty()) {
+        QMessageBox::information(this, "提示", "请输入发送内容！", QMessageBox::Yes);
+    }
+    else {
+        if(ui-&gt;comboBoxData_Socket_Server_Select_Mode-&gt;currentText()=="指定模式"){
+
+            //获取控制器ID
+            QString ControllerID = ui-&gt;comboBox_ControlID-&gt;currentText();
+            //找控制器对应的端口
+            QString socketPort="";
+            QString socketIP="";
+            for(int i=0;i&lt;ui-&gt;tableWidget_Socket_Server-&gt;rowCount();i++){
+                if(ControllerID == ui-&gt;tableWidget_Socket_Server-&gt;item(i, 3)-&gt;text()){
+                    socketPort = ui-&gt;tableWidget_Socket_Server-&gt;item(i, 2)-&gt;text();
+                    socketIP = ui-&gt;tableWidget_Socket_Server-&gt;item(i, 1)-&gt;text();
+                    break;
+                }
+            }
+            if(socketPort==""){
+                QMessageBox::information(this, tr("提示消息"), tr("没有找到该控制器对应的socket端口！"), QMessageBox::Ok);
+                return;
+            }
+            //拿到端口后去找，因为服务器分配的端口是唯一的，所以就不判断IP啦，懒😎
+            for (int i = 0; i &lt; clientSocket.length(); ++i) {
+                if (QString::number(clientSocket[i]-&gt;peerPort()) == socketPort) {
+                    //以ASCII码形式发送文本框内容
+                    clientSocket[i]-&gt;write(qstring_to_qbytearray(data));
+
+                    //显示数据流
+                    QString timeStrLine="["+QDateTime::currentDateTime().toString("hh:mm:ss")+"][发送]:🚀 ";
+                    QString content_l = "&lt;span style=\" color:red;\"&gt;"+timeStrLine +data+"\n\r&lt;/span&gt;";
+                    ui-&gt;textBrowser-&gt;append(content_l);
+                }
+            }
+
+        }else if(ui-&gt;comboBoxData_Socket_Server_Select_Mode-&gt;currentText()=="广播模式"){
+            for (int i = 0; i &lt; clientSocket.length(); ++i) {
+                    //以ASCII码形式发送文本框内容
+                    clientSocket[i]-&gt;write(qstring_to_qbytearray(data));
+            }
+        }
+    }
+}
+</code></pre><h3 id="处理接收"><a class="anchor" href="#处理接收">#</a> 处理接收</h3><pre><code class="language-c++">//接收
+void MainWindow::Socket_Server_Recieve_Data()
+{
+    // 由于readyRead信号并未提供SocketDecriptor，所以需要遍历所有客户端
+    for (int i = 0; i &lt; clientSocket.length(); ++i) {
+        // 读取缓冲区数据
+        QByteArray buffer = clientSocket[i]-&gt;readAll();
+        if(buffer.isEmpty()) {
+            continue;
+        }
+
+        static QString IP_Port, IP_Port_Pre;
+        IP_Port = tr("[%1:%2]:").arg(clientSocket[i]-&gt;peerAddress().toString().mid(7)).arg(clientSocket[i]-&gt;peerPort());
+
+        // 若此次消息的地址与上次不同，则需显示此次消息的客户端地址
+        if (IP_Port != IP_Port_Pre) {
+            ui-&gt;textEdit_Socket_Server_RecvData-&gt;append(IP_Port);
+        }
+
+        //---------------------根据需要来处理接收-------------------------------
+		//buffer
+		
+        //---------------------根据需要来处理接收-------------------------------
+
+        // 更新ip_port
+        IP_Port_Pre = IP_Port;
+    }
+}
+</code></pre><p>那么到这基本就结束了！</p><p>有了 socket，自己的小产品才有了灵魂好吧。随时随地，都可以远程控制它了！</p><h2 id="关于frp内网穿透"><a class="anchor" href="#关于frp内网穿透">#</a> 关于 frp 内网穿透</h2><p>教程请看云服务器搭建内网穿透</p><p></p><div class="links"><div class="item" title="云服务器搭建Frps实现内网穿透" style="--block-color:#21d4fd"><span class="exturl image" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MzU0NjI5MjA=" data-background-image="https://foruda.gitee.com/avatar/1680342439464493317/9010997_flechazo5201314_1680342439.png!avatar200"></span><div class="info"><span class="exturl title" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MzU0NjI5MjA=">云服务器搭建Frps实现内网穿透</span><p class="desc">https://zhuanlan.zhihu.com/p/635462920</p></div></div></div><p></p><p>QT 对应的部分后期会整理成《QT 一键启动 frpc 内网穿透》</p><div class="tags"><a href="/tags/QT/" rel="tag"><i class="ic i-tag"></i> QT</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2023-08-07 21:52:08" itemprop="dateModified" datetime="2023-08-07T21:52:08+08:00">2023-08-07</time> </span><span id="archives/cd721bd1.html" class="item leancloud_visitors" data-flag-title="QTsocket连接" title="阅读次数"><span class="icon"><i class="ic i-eye"></i> </span><span class="text">阅读次数</span> <span class="leancloud-visitors-count"></span> <span class="text">次</span></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.png" alt="flechazo 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.png" alt="flechazo 支付宝"><p>支付宝</p></div><div><img data-src="/images/paypal.png" alt="flechazo 贝宝"><p>贝宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者： </strong>flechazo <i class="ic i-at"><em>@</em></i>我在人间贩卖黄昏，只为收集世间温柔遇见你.</li><li class="link"><strong>本文链接：</strong> <a href="https://flechazoclf.github.io/FlechazoCLF.github.io/archives/cd721bd1.html" title="QTsocket连接">https://flechazoclf.github.io/FlechazoCLF.github.io/archives/cd721bd1.html</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/archives/d989430a.html" itemprop="url" rel="prev" data-background-image="/archives/d989430a.html../../../wallpaper/14.png" title="一种flash的存储方式,基于GD25Q64"><span class="type">上一篇</span> <span class="category"><i class="ic i-flag"></i> QT</span><h3>一种flash的存储方式,基于GD25Q64</h3></a></div><div class="item right"><a href="/archives/e3153979.html" itemprop="url" rel="next" data-background-image="/archives/e3153979.html../../../wallpaper/55.png" title="一文彻底理解原码反码和补码"><span class="type">下一篇</span> <span class="category"><i class="ic i-flag"></i> C语言</span><h3>一文彻底理解原码反码和补码</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#qt%E7%9A%84socket%E6%9C%8D%E5%8A%A1%E7%AB%AF%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.</span> <span class="toc-text">QT 的 socket 服务端连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83"><span class="toc-number">2.</span> <span class="toc-text">环境：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8B%E4%BD%8D%E6%9C%BA"><span class="toc-number">3.</span> <span class="toc-text">1、下位机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#gd32f303cat1%E6%A8%A1%E7%BB%84"><span class="toc-number">3.1.</span> <span class="toc-text">GD32F303+CAT1 模组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#esp32s3"><span class="toc-number">3.2.</span> <span class="toc-text">ESP32S3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%8A%E4%BD%8D%E6%9C%BA"><span class="toc-number">4.</span> <span class="toc-text">2、上位机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E4%BD%A0%E9%9C%80%E8%A6%81%E6%9C%89%E8%BF%99%E4%B8%AA%E7%95%8C%E9%9D%A2"><span class="toc-number">4.1.</span> <span class="toc-text">首先你需要有这个界面</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0ip%E5%9C%B0%E5%9D%80"><span class="toc-number">4.1.1.</span> <span class="toc-text">本地 IP 地址</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E7%AB%AF%E5%8F%A3"><span class="toc-number">4.1.2.</span> <span class="toc-text">本地端口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BE%A6%E5%90%AC%E6%8C%89%E9%92%AE"><span class="toc-number">4.1.3.</span> <span class="toc-text">侦听按钮</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E5%8F%91%E9%80%81%E6%8E%A5%E6%94%B6"><span class="toc-number">4.1.4.</span> <span class="toc-text">消息发送接收</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96socke"><span class="toc-number">4.2.</span> <span class="toc-text">初始化 socke</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BE%A6%E5%90%AC%E6%8C%89%E9%94%AE"><span class="toc-number">4.3.</span> <span class="toc-text">侦听按键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%AE%A2%E6%88%B7%E7%AB%AF%E8%BF%9E%E6%8E%A5"><span class="toc-number">4.4.</span> <span class="toc-text">新客户端连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E5%8F%91%E9%80%81"><span class="toc-number">4.5.</span> <span class="toc-text">处理发送</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E6%8E%A5%E6%94%B6"><span class="toc-number">4.6.</span> <span class="toc-text">处理接收</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Efrp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F"><span class="toc-number">5.</span> <span class="toc-text">关于 frp 内网穿透</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li><a href="/archives/8ada3c3f.html" rel="bookmark" title="qt程序打包">qt程序打包</a></li><li><a href="/archives/f04b09b7.html" rel="bookmark" title="qt读写excel表格">qt读写excel表格</a></li><li><a href="/archives/ae097b6e.html" rel="bookmark" title="qt键值对实现指令解析与拼凑">qt键值对实现指令解析与拼凑</a></li><li><a href="/archives/3d4fc45a.html" rel="bookmark" title="QT中的数据类型转换小本本">QT中的数据类型转换小本本</a></li><li><a href="/archives/66210242.html" rel="bookmark" title="QT工厂配置工具">QT工厂配置工具</a></li><li><a href="/archives/ea828494.html" rel="bookmark" title="QT一键运行bat脚本文件">QT一键运行bat脚本文件</a></li><li><a href="/archives/85c52c40.html" rel="bookmark" title="串口通信中的接收与发送队列处理大数据">串口通信中的接收与发送队列处理大数据</a></li><li><a href="/archives/d989430a.html" rel="bookmark" title="一种flash的存储方式,基于GD25Q64">一种flash的存储方式,基于GD25Q64</a></li><li class="active"><a href="/archives/cd721bd1.html" rel="bookmark" title="QTsocket连接">QTsocket连接</a></li><li><a href="/archives/a4f9153.html" rel="bookmark" title="QT数据库的基本使用">QT数据库的基本使用</a></li><li><a href="/archives/e52cfcec.html" rel="bookmark" title="QT读写word文档">QT读写word文档</a></li><li><a href="/archives/7870ba02.html" rel="bookmark" title="QT读取bin文件">QT读取bin文件</a></li><li><a href="/archives/dec6794a.html" rel="bookmark" title="QT给输入框添加自动补全提示词">QT给输入框添加自动补全提示词</a></li><li><a href="/archives/7f90a610.html" rel="bookmark" title="QT中信号与槽的连接">QT中信号与槽的连接</a></li><li><a href="/archives/1a8fe83d.html" rel="bookmark" title="QT实用工具之DOC转PDF">QT实用工具之DOC转PDF</a></li><li><a href="/archives/829c4b27.html" rel="bookmark" title="QT定时器的使用">QT定时器的使用</a></li><li><a href="/archives/1558dc78.html" rel="bookmark" title="QT接收电脑串口的数据">QT接收电脑串口的数据</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="flechazo" data-src="/images/avatar.jpg"><p class="name" itemprop="name">flechazo</p><div class="description" itemprop="description">我在人间贩卖星光</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">192</span> <span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">44</span> <span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">41</span> <span class="name">标签</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL0Fnb25pMzdD" title="https://github.com/Agoni37C"><i class="ic i-github"></i></span> <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS9qaXVfc2hlbmc=" title="https://www.zhihu.com/people/jiu_sheng"><i class="ic i-zhihu"></i></span> <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvcGxheWxpc3Q/aWQ9NzE3NTI4NzIwNQ==" title="https://music.163.com/#/playlist?id=7175287205"><i class="ic i-cloud-music"></i></span> <span class="exturl item weixin" data-url="aHR0cDovL21wLndlaXhpbi5xcS5jb20vbXAvaG9tZXBhZ2U/X19iaXo9TXpBeE9ETTJOVFEwTnc9PSZoaWQ9MiZzbj05ZThkZGVkOGU3MTgxYTA4YTA1MjFiOTQ2MjIyY2Q3MiZzY2VuZT0xOCN3ZWNoYXRfcmVkaXJlY3Q=" title="http://mp.weixin.qq.com/mp/homepage?__biz=MzAxODM2NTQ0Nw==&amp;hid=2&amp;sn=9e8dded8e7181a08a0521b946222cd72&amp;scene=18#wechat_redirect"><i class="ic i-address-card"></i></span> <span class="exturl item bilibili" data-url="aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vNDQxODc1ODQ0P3NwbV9pZF9mcm9tPTMzMy4xMDA3LjAuMA==" title="https://space.bilibili.com/441875844?spm_id_from=333.1007.0.0"><i class="ic i-bilibili"></i></span></div><ul class="menu"><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAwLw=="><i class="ic i-home"></i>首页</span></li><li class="item"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>小伙伴们</a></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAxLw=="><i class="ic i-magic"></i>导航页🚀</span></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>小天地🍼</a><ul class="submenu"><li class="item"><a href="/broken-thoughts/" rel="section"><i class="ic i-heart"></i>碎碎念</a></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAyLw=="><i class="ic i-heart"></i>云小🎪盘</span></li><li class="item"><a href="/mypages/Videoparse/" rel="section"><i class="ic i-heart"></i>视频解析</a></li><li class="item"><a href="/movies/" rel="section"><i class="ic i-heart"></i>影集</a></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDA5Lw=="><i class="ic i-heart"></i>游戏🎮小站</span></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDA2Lw=="><i class="ic i-heart"></i>动感天地🎶</span></li><li class="item"><span class="exturl" data-url="aHR0cDovLzEyMS4zNy4xNi4zMDo4MDAzLw=="><i class="ic i-heart"></i>4k壁纸❄</span></li></ul></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>有趣单页</a><ul class="submenu"><li class="item"><a href="/mypageslayout/barrage/" rel="section"><i class="ic i-list-alt"></i>弹幕墙</a></li><li class="item"><a href="/mypages/crossing-the-cliff/" rel="section"><i class="ic i-th"></i>圣诞老人过桥</a></li><li class="item"><a href="/mypages/eat/" rel="section"><i class="ic i-tags"></i>今天吃什么</a></li><li class="item"><a href="/mypages/clock/" rel="section"><i class="ic i-list-alt"></i>好看的闹钟</a></li><li class="item"><a href="/mypages/QQpage/" rel="section"><i class="ic i-list-alt"></i>QQ展示页</a></li><li class="item"><a href="/mypages/jianli/" rel="section"><i class="ic i-th"></i>简历</a></li><li class="item"><a href="/mypages/love/" rel="section"><i class="ic i-tags"></i>执子之手</a></li><li class="item"><a href="/mypages/tiangou/" rel="section"><i class="ic i-list-alt"></i>舔狗语录</a></li><li class="item"><a href="/mypages/washing/" rel="section"><i class="ic i-th"></i>洗衣机</a></li><li class="item"><a href="/mypages/todolist/" rel="section"><i class="ic i-tags"></i>行动清单</a></li><li class="item"><a href="/mypages/yindao2/" rel="section"><i class="ic i-list-alt"></i>引导页</a></li></ul></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/archives/d989430a.html" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/archives/e3153979.html" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/%E5%B5%8C%E5%85%A5%E5%BC%8F/" title="分类于 嵌入式">嵌入式</a></div><span><a href="/archives/363bdf24.html" title="嵌入式软件开发知识总结">嵌入式软件开发知识总结</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/python/" title="分类于 python">python</a></div><span><a href="/archives/29aeaa69.html" title="Python爬虫学习笔记">Python爬虫学习笔记</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/AUTOSAR/" title="分类于 AUTOSAR">AUTOSAR</a></div><span><a href="/archives/7cac95ec.html" title="小柴带你学AutoSar系列一、基础知识篇（4）编译">小柴带你学AutoSar系列一、基础知识篇（4）编译</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/english/" title="分类于 english">english</a> <i class="ic i-angle-right"></i> <a href="/categories/english/%E6%81%8B%E6%81%8B%E6%9C%89%E8%AF%8D/" title="分类于 恋恋有词">恋恋有词</a></div><span><a href="/archives/8598e99f.html" title="🥟恋恋有词-高频核心词-unit03">🥟恋恋有词-高频核心词-unit03</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/AUTOSAR/" title="分类于 AUTOSAR">AUTOSAR</a></div><span><a href="/archives/e0c2534f.html" title="小柴带你学AutoSar系列三、标准和规范篇（5）CommunicationManagement">小柴带你学AutoSar系列三、标准和规范篇（5）CommunicationManagement</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/tools/" title="分类于 实用小工具">实用小工具</a></div><span><a href="/archives/cf625652.html" title="⛄常用的超级方便的工具☃">⛄常用的超级方便的工具☃</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="分类于 服务器">服务器</a></div><span><a href="/archives/22049b8e.html" title="云服务器搭建Frps实现内网穿透">云服务器搭建Frps实现内网穿透</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/C%E8%AF%AD%E8%A8%80/" title="分类于 C语言">C语言</a></div><span><a href="/archives/48b3f971.html" title="C语言define的骚操作">C语言define的骚操作</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/microcosm/" title="分类于 小世界✨">小世界✨</a> <i class="ic i-angle-right"></i> <a href="/categories/microcosm/%E7%A7%9F%E6%88%BF/" title="分类于 租房">租房</a></div><span><a href="/archives/3c0c5a78.html" title="即将开启的沪漂生涯">即将开启的沪漂生涯</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/technique/" title="分类于 技术教程🎃">技术教程🎃</a> <i class="ic i-angle-right"></i> <a href="/categories/technique/C%E8%AF%AD%E8%A8%80/" title="分类于 C语言">C语言</a></div><span><a href="/archives/563afaa7.html" title="编码技巧之如何优雅的解耦">编码技巧之如何优雅的解耦</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">© 2020 – <span itemprop="copyrightYear">2025</span> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">flechazo @ flechazo</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="站点总字数">906k 字</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="站点阅读时长">13:44</span></div><div class="powered-by">基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> &amp; Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config="" type="text/javascript">var LOCAL={path:"archives/cd721bd1.html",favicon:{show:"flechazo",hide:"(´Д｀)客官别走！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script><script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html><!-- rebuild by hrmmi -->
